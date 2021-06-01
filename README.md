@@ -23,10 +23,12 @@ When running the master, don't forget to disable ICMP replies by the OS. For exa
 
 Run **icmp_shell_file_transfert.ps1** on the target machine (you need to put the attacker's IP address on `$IPAddress` )
 If everything works you will get connection notification:
+
 ![Client/Server connected](https://raw.githubusercontent.com/soufianetahiri/ICMP/main/connected.PNG)
 
 Convert to base64 the file you want to send over ICMP (let's say I want to exfiltrate book.xlsx or send mymalicious.exe).
 You can either do it via Powershell:
+
 ```
     $base64string = [Convert]::ToBase64String([IO.File]::ReadAllBytes($FileName))
 ```
