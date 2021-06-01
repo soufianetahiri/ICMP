@@ -35,8 +35,13 @@ Or directly from your terminal if you're on a *nix machine:
     base64 mymalicious.exe > mymalicious.exe.b64
 
 Append the target file's name between **##**, **#EOF#**  and #**EOP#**  to your .b64 file as follow:
+
 ![](https://raw.githubusercontent.com/soufianetahiri/ICMP/main/EOFappend.PNG)
+
 Then copy and past the whole into your Server:
+
 ![](https://raw.githubusercontent.com/soufianetahiri/ICMP/main/PastB64.PNG)
+
 The client will handle chunks, decode and save the file then send back its location to the server:
+
 ![](https://raw.githubusercontent.com/soufianetahiri/ICMP/main/trasfered.PNG)
